@@ -1,0 +1,36 @@
+{
+    "name": "dofy",
+    "version": "0.0.1",
+    "bin": "lib/index.js",
+    "description": "Sim",
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "license": "MIT OR Apache-2.0",
+    "scripts": {
+        "typecheck": "tsc --noEmit",
+        "lint": "eslint .",
+        "lint:fix": "eslint . --fix",
+        "build": "tsc",
+        "dev": "pnpm build && node lib/index.js"
+    },
+    "devDependencies": {
+        "@types/node": "^18.19.86",
+        "@typescript-eslint/eslint-plugin": "^5.62.0",
+        "@typescript-eslint/parser": "^5.62.0",
+        "typescript": "^4.9.5"
+    },
+    "optionalDependencies": {
+        "dofy-darwin-amd64": "0.0.1",
+        "dofy-darwin-arm64": "0.0.1",
+        "dofy-linux-amd64": "0.0.1",
+        "dofy-linux-arm64": "0.0.1",
+        "dofy-windows-amd64": "0.0.1",
+        "dofy-windows-arm64": "0.0.1"
+    },
+    "dependencies": {
+        "acorn": "8.14.1",
+        "eslint": "8.57.1"
+    }
+}

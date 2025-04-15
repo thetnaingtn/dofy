@@ -1,3 +1,7 @@
 ## binaries
-bin# Added by goreleaser init:
+bin
+# Added by goreleaser init:
 dist/
+
+# node_modules
+node_modules
