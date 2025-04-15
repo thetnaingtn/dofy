@@ -1,2 +1,2 @@
 build:
-	go build -o bin/isitdayoffyet ./
+	go build -o bin/dofy ./
