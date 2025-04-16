@@ -2,11 +2,12 @@
     "name": "dofy",
     "version": "0.0.1",
     "bin": "lib/index.js",
-    "description": "Sim",
+    "description": "A CLI tool that tells you when your next day off is.",
     "repository": {
         "type": "git",
-        "url": ""
+        "url": "https://github.com/thetnaingtn/isitdayoffyet"
     },
+    "keywords": ["github","go", "cli", "bubble", "bubbletea"],
     "license": "MIT OR Apache-2.0",
     "scripts": {
         "typecheck": "tsc --noEmit",
@@ -28,9 +29,5 @@
         "dofy-linux-arm64": "0.0.1",
         "dofy-windows-amd64": "0.0.1",
         "dofy-windows-arm64": "0.0.1"
-    },
-    "dependencies": {
-        "acorn": "8.14.1",
-        "eslint": "8.57.1"
     }
 }
