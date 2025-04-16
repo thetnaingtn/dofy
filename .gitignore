@@ -1,2 +1,10 @@
 ## binaries
 bin
+# Added by goreleaser init:
+dist/
+
+# node_modules
+node_modules
+
+# NPM
+npm/dofy/lib
