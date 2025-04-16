@@ -56,7 +56,7 @@ jobs:
       - name: Install Node
         uses: actions/setup-node@v4
         with:
-          node-version: "16"
+          node-version: 20
           registry-url: "https://registry.npmjs.org"
 
       - name: Download uploaded binaries
@@ -103,18 +103,24 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 8
   
       - name: Install Node
         uses: actions/setup-node@v4
         with:
-          node-version: "16"
+          node-version: 20
           registry-url: "https://registry.npmjs.org"
+          
       - name: Publish to NPM
         shell: bash
         run: |
           cd npm/dofy
-          yarn install
-          yarn build
+          pnpm install
+          pnpm build
           npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_API_KEY}}
