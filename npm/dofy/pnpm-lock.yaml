@@ -4,6 +4,26 @@ settings:
   autoInstallPeers: true
   excludeLinksFromLockfile: false
 
+optionalDependencies:
+  dofy-darwin-amd64:
+    specifier: 0.0.1
+    version: 0.0.1
+  dofy-darwin-arm64:
+    specifier: 0.0.1
+    version: 0.0.1
+  dofy-linux-amd64:
+    specifier: 0.0.1
+    version: 0.0.1
+  dofy-linux-arm64:
+    specifier: 0.0.1
+    version: 0.0.1
+  dofy-windows-amd64:
+    specifier: 0.0.1
+    version: 0.0.1
+  dofy-windows-arm64:
+    specifier: 0.0.1
+    version: 0.0.1
+
 devDependencies:
   '@types/node':
     specifier: ^18.19.86
@@ -376,6 +396,54 @@ packages:
     dependencies:
       esutils: 2.0.3
     dev: true
+
+  /dofy-darwin-amd64@0.0.1:
+    resolution: {integrity: sha512-949uN2eHmyKzDsmgh6CLWxFWHYvGh56k3ouy/sJ6RTM6yuhaQsJx+V7Kb0QC6nmUc96e8RpcDecOqa7QWm98Kg==}
+    cpu: [amd64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /dofy-darwin-arm64@0.0.1:
+    resolution: {integrity: sha512-ZuQaagXterpJt/xZBn2HPciw4P/RnTkwtqK2clHOoqaKH68lERHji8J/qWW4YevfEQ/0Ercv5LQ9RLg3bT9MnA==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /dofy-linux-amd64@0.0.1:
+    resolution: {integrity: sha512-RDYQgCiVlEOyA+2oE2E5Z0aLOD45qPl8CBwCMn443MVwXSJfPhJLbBr2ZZEITF/gifkB/RoUvqvq2eX1tj/rHA==}
+    cpu: [amd64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /dofy-linux-arm64@0.0.1:
+    resolution: {integrity: sha512-O5Z4D4miZiY2kndFpP8huGtOrvfCuBzDnrZZU/AJ5Vl0qSSICFMHHwlFpMkkkFV3jioOQc6m0f6xG1M8ihlz5g==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /dofy-windows-amd64@0.0.1:
+    resolution: {integrity: sha512-vk/w5oHwi0166ILNyJ5V51EnPjhR9k025jDXQcucxFqO4jE5mWTzR0GtSvzb4rAvIfCvxFgMhRX8z+IXnNDONQ==}
+    cpu: [amd64]
+    os: [windows]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /dofy-windows-arm64@0.0.1:
+    resolution: {integrity: sha512-D/jTULGFVOheMWkGxeayPq4hG/wmCM8KtCbUr8wsgXw3Xm7B1sTSrEPpEgtQyZuAUmFIaS9yPwRf+sV9br5YWQ==}
+    cpu: [arm64]
+    os: [windows]
+    requiresBuild: true
+    dev: false
+    optional: true
 
   /escape-string-regexp@4.0.0:
     resolution: {integrity: sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==}
