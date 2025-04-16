@@ -117,7 +117,7 @@ jobs:
         shell: bash
         run: |
           cd npm/dofy
-          pnpm install
+          pnpm install --no-frozen-lockfile
           pnpm build
           npm publish --access public
         env:
