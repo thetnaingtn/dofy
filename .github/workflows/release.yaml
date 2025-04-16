@@ -31,7 +31,7 @@ jobs:
           version: "~> v2"
           args: release --clean
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PUBLISHER_TOKEN }}
 
       - name: Upload Binaries
         uses: actions/upload-artifact@v4
@@ -93,7 +93,7 @@ jobs:
           cd "${node_pkg}"
           npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_API_KEY}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_ACCESS_TOKEN}}
   publish-dofy:
     needs: publish-binaries
     name: Publish base package to NPM
@@ -114,7 +114,7 @@ jobs:
         with:
           node-version: 20
           registry-url: "https://registry.npmjs.org"
-          
+
       - name: Publish to NPM
         shell: bash
         run: |
@@ -123,4 +123,4 @@ jobs:
           pnpm build
           npm publish --access public
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_API_KEY}}
+          NODE_AUTH_TOKEN: ${{secrets.NPM_ACCESS_TOKEN}}
