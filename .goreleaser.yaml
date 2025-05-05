@@ -23,6 +23,7 @@ builds:
       - arm64
       - amd64
     id: dofy
+    main: ./cmd/dofy/main.go
     binary: dofy
 archives:
   - formats: [tar.gz]
