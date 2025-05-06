@@ -1,6 +1,6 @@
 {
     "name": "dofy",
-    "version": "0.0.2",
+    "version": "0.1.0",
     "bin": "lib/index.js",
     "description": "A CLI tool that tells you when your next day off is.",
     "repository": {
@@ -23,11 +23,11 @@
         "typescript": "^4.9.5"
     },
     "optionalDependencies": {
-        "dofy-darwin-amd64": "0.0.2",
-        "dofy-darwin-arm64": "0.0.2",
-        "dofy-linux-amd64": "0.0.2",
-        "dofy-linux-arm64": "0.0.2",
-        "dofy-windows-amd64": "0.0.2",
-        "dofy-windows-arm64": "0.0.2"
+        "dofy-darwin-amd64": "0.1.0",
+        "dofy-darwin-arm64": "0.1.0",
+        "dofy-linux-amd64": "0.1.0",
+        "dofy-linux-arm64": "0.1.0",
+        "dofy-windows-amd64": "0.1.0",
+        "dofy-windows-arm64": "0.1.0"
     }
 }
