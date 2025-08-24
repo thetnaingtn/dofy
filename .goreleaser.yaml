@@ -46,6 +46,24 @@ changelog:
     exclude:
       - "^docs:"
       - "^test:"
+brews:
+  - name: dofy
+    commit_author:
+      name: thetnaingtn
+      email: thetnaingtun.ucsy@gmail.com
+    commit_msg_template: "Brew formula update for {{ .ProjectName }} version {{ .Tag }}"
+    directory: Formula
+    license: "MIT"
+    install: |
+      bin.install "dofy"
+    test: |
+      system "#{bin}/dofy --version"
+    # Repository to push the generated files to.
+    repository:
+      owner: thetnaingtn
+      name: homebrew-dofy
+      branch: main
+      token: "{{ .Env.GITHUB_TOKEN }}"
 
 release:
   footer: >-
