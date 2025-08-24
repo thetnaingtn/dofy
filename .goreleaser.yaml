@@ -63,7 +63,7 @@ brews:
       owner: thetnaingtn
       name: homebrew-dofy
       branch: main
-      token: "{{ .Env.DOFY_HOME_BREW }}"
+      token: "{{ .Env.GITHUB_TOKEN }}"
 
 release:
   footer: >-
